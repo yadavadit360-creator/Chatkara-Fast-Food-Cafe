@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatkara - Hot, Fresh & Delicious Fast Food</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-fire"></i> Chatkara
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#order" class="btn-order">Order Now</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>One Bite. Instant Chatkara! 🔥</h1>
+            <p>Hot, Fresh, Cheesy & Full of Flavor</p>
+            <p class="subtitle">From delicious pizzas to tempting fast food, Chatkara is made for your cravings.</p>
+            <button class="btn btn-primary" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})">Explore Menu</button>
+        </div>
+        <div class="hero-image">
+            <i class="fas fa-pizza-slice"></i>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <p class="section-subtitle">Feast on our delicious offerings</p>
+            
+            <!-- Menu Categories -->
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="pizzas">Pizzas</button>
+                <button class="category-btn" data-category="burgers">Burgers</button>
+                <button class="category-btn" data-category="sides">Sides</button>
+                <button class="category-btn" data-category="drinks">Drinks</button>
+            </div>
+
+            <!-- Menu Items Grid -->
+            <div class="menu-grid">
+                <!-- Pizzas -->
+                <div class="menu-item" data-category="pizzas">
+                    <div class="item-image"><i class="fas fa-pizza-slice"></i></div>
+                    <h3>Margherita Pizza</h3>
+                    <p>Classic blend of mozzarella, basil & tomato</p>
+                    <div class="price">₹299</div>
+                </div>
+                <div class="menu-item" data-category="pizzas">
+                    <div class="item-image"><i class="fas fa-pizza-slice"></i></div>
+                    <h3>Pepperoni Paradise</h3>
+                    <p>Loaded with pepperoni & extra cheese</p>
+                    <div class="price">₹349</div>
+                </div>
+                <div class="menu-item" data-category="pizzas">
+                    <div class="item-image"><i class="fas fa-pizza-slice"></i></div>
+                    <h3>Veggie Supreme</h3>
+                    <p>Bell peppers, onions, olives & mushrooms</p>
+                    <div class="price">₹329</div>
+                </div>
+                <div class="menu-item" data-category="pizzas">
+                    <div class="item-image"><i class="fas fa-pizza-slice"></i></div>
+                    <h3>Spicy Tikka</h3>
+                    <p>Indian spiced chicken with tikka masala</p>
+                    <div class="price">₹399</div>
+                </div>
+
+                <!-- Burgers -->
+                <div class="menu-item" data-category="burgers">
+                    <div class="item-image"><i class="fas fa-hamburger"></i></div>
+                    <h3>Classic Chtkara Burger</h3>
+                    <p>Juicy beef patty with special sauce</p>
+                    <div class="price">₹199</div>
+                </div>
+                <div class="menu-item" data-category="burgers">
+                    <div class="item-image"><i class="fas fa-hamburger"></i></div>
+                    <h3>Double Cheeseburger</h3>
+                    <p>Two patties, two slices of melted cheese</p>
+                    <div class="price">₹279</div>
+                </div>
+                <div class="menu-item" data-category="burgers">
+                    <div class="item-image"><i class="fas fa-hamburger"></i></div>
+                    <h3>Spicy Fried Chicken Burger</h3>
+                    <p>Crispy fried chicken with hot sauce</p>
+                    <div class="price">₹249</div>
+                </div>
+                <div class="menu-item" data-category="burgers">
+                    <div class="item-image"><i class="fas fa-hamburger"></i></div>
+                    <h3>Veggie Delight Burger</h3>
+                    <p>Plant-based patty with fresh veggies</p>
+                    <div class="price">₹189</div>
+                </div>
+
+                <!-- Sides -->
+                <div class="menu-item" data-category="sides">
+                    <div class="item-image"><i class="fas fa-shopping-basket"></i></div>
+                    <h3>Crispy Fries</h3>
+                    <p>Golden fried potato fries with seasoning</p>
+                    <div class="price">₹99</div>
+                </div>
+                <div class="menu-item" data-category="sides">
+                    <div class="item-image"><i class="fas fa-shopping-basket"></i></div>
+                    <h3>Onion Rings</h3>
+                    <p>Crunchy fried onion rings</p>
+                    <div class="price">₹129</div>
+                </div>
+                <div class="menu-item" data-category="sides">
+                    <div class="item-image"><i class="fas fa-shopping-basket"></i></div>
+                    <h3>Mozzarella Sticks</h3>
+                    <p>Fried cheese sticks with dipping sauce</p>
+                    <div class="price">₹149</div>
+                </div>
+                <div class="menu-item" data-category="sides">
+                    <div class="item-image"><i class="fas fa-shopping-basket"></i></div>
+                    <h3>Garlic Bread</h3>
+                    <p>Toasted bread with garlic & herbs</p>
+                    <div class="price">₹89</div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="menu-item" data-category="drinks">
+                    <div class="item-image"><i class="fas fa-mug-hot"></i></div>
+                    <h3>Chatkara Special Shake</h3>
+                    <p>Vanilla or Chocolate - your choice!</p>
+                    <div class="price">₹129</div>
+                </div>
+                <div class="menu-item" data-category="drinks">
+                    <div class="item-image"><i class="fas fa-mug-hot"></i></div>
+                    <h3>Fresh Fruit Juice</h3>
+                    <p>Orange, Apple, or Mango - freshly squeezed</p>
+                    <div class="price">₹99</div>
+                </div>
+                <div class="menu-item" data-category="drinks">
+                    <div class="item-image"><i class="fas fa-mug-hot"></i></div>
+                    <h3>Cold Beverages</h3>
+                    <p>Coke, Sprite, Fanta - ice cold</p>
+                    <div class="price">₹49</div>
+                </div>
+                <div class="menu-item" data-category="drinks">
+                    <div class="item-image"><i class="fas fa-mug-hot"></i></div>
+                    <h3>Iced Coffee</h3>
+                    <p>Refreshing iced coffee with a kick</p>
+                    <div class="price">₹89</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Chatkara</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Why Choose Chatkara?</h3>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Fresh ingredients every single day</li>
+                        <li><i class="fas fa-check-circle"></i> Cooked to perfection in minutes</li>
+                        <li><i class="fas fa-check-circle"></i> Authentic recipes with a modern twist</li>
+                        <li><i class="fas fa-check-circle"></i> Affordable prices without compromising quality</li>
+                        <li><i class="fas fa-check-circle"></i> Fast delivery & excellent service</li>
+                        <li><i class="fas fa-check-circle"></i> Hygienic & clean kitchen standards</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>500+</h3>
+                        <p>Happy Customers Daily</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Menu Items</p>
+                    </div>
+                    <div class="stat">
+                        <h3>15 Min</h3>
+                        <p>Average Delivery Time</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                        <p>123 Food Street, Main Market<br>Your City, State 12345</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                        <p>+91 98765 43210<br>+91 98765 43211</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>hello@chatkara.com<br>orders@chatkara.com</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Hours</h3>
+                        <p>Mon - Sun: 10:00 AM - 11:00 PM<br>Holidays: 12:00 PM - 10:00 PM</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="text" placeholder="Subject" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order CTA Section -->
+    <section id="order" class="order-cta">
+        <div class="container">
+            <h2>Ready to Order?</h2>
+            <p>One bite. Instant Chatkara! 🔥</p>
+            <div class="order-buttons">
+                <button class="btn btn-primary btn-large">Order on Phone</button>
+                <button class="btn btn-secondary btn-large">Order Online</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Chatkara</h3>
+                    <p>Hot, fresh, cheesy and full of flavor!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#menu">Pizzas</a></li>
+                        <li><a href="#menu">Burgers</a></li>
+                        <li><a href="#menu">Sides</a></li>
+                        <li><a href="#menu">Drinks</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Policy</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chatkara Fast Food Cafe. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> for food lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
